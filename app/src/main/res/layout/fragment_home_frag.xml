@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".Home_frag">
+
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="DASHBOARD"
+        android:textColor="#575959"
+        android:textSize="35dp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/dash"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/lec_mat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Modules"
+        android:textColor="#575959"
+        android:layout_below="@id/calendarView"
+        android:textSize="25dp" />
+
+    <!--first module/////////////////////////////////////////-->
+
+    <ImageButton
+        android:id="@+id/mat1"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/lec_mat"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="MAD"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/mad" />
+
+    <TextView
+        android:id="@+id/mobile_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="SE303.3 Mobile Application Development"
+        android:textColor="#2e2e2e"
+        android:layout_below="@id/mat1"
+        android:gravity="center"
+        android:textSize="15dp" />
+
+    <!--2nd module/////////////////////////////////////////-->
+
+    <ImageButton
+        android:id="@+id/mat2"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/mobile_app"
+        android:layout_alignParentEnd="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/qa"
+        android:contentDescription="QA" />
+
+    <TextView
+        android:id="@+id/lec_mat_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="CS306.3 Information Assurance and Security"
+        android:textColor="#e0dede"
+        android:layout_below="@id/mat2"
+        android:gravity="center"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
