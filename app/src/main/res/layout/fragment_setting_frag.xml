@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".settings">
+
+    <TextView
+        android:id="@+id/sett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="SETTINGS"
+        android:textColor="#575959"
+        android:textSize="35dp" />
+
+
+
+
+    <CheckBox
+        android:id="@+id/updateCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sett"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Auto Update"
+        android:textColor="#828282"
+        android:textSize="22dp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/notifiCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateCheck"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Exam and assignment notification"
+        android:textColor="#828282"
+        android:textSize="22dp"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_below="@id/notifiCheck"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <!--////// set new password section //////////////////////////////////////////////////////////////-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passc"
+        android:layout_below="@id/divider"
+        android:text="Set new Password"
+        android:layout_marginTop="20dp"
+        android:textColor="#547d7c"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passc2"
+        android:layout_below="@id/passc"
+        android:text="Enter new password:"
+        android:textColor="#547d7c"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="end"
+        />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#70cfcfcf"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#807b7a"
+        android:textColorHint="#807b7a"
+        android:layout_below="@id/passc2"
+
+        />
+
+    <!--////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passc3"
+        android:layout_below="@id/password1"
+        android:text="Reenter password:"
+        android:textColor="#547d7c"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="end"
+        />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#70cfcfcf"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#807b7a"
+        android:textColorHint="#807b7a"
+        android:layout_below="@id/passc3"
+        />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/password2"
+        android:layout_marginTop="2dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comm"
+        android:layout_below="@id/divider2"
+        android:text="Comments"
+        android:layout_marginTop="20dp"
+        android:textColor="#547d7c"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/text_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comm"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#70cfcfcf"
+        android:hint="tell us about your experience about this app"
+        android:padding="30dp"
+        android:textColor="#807b7a"
+        android:textColorHint="#807b7a" />
+
+
+</RelativeLayout>
