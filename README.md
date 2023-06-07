@@ -10,3 +10,5 @@ android java app for university LMS
 
 ![settings](https://github.com/KavinduLakmal2000/Android_LMS/assets/87576012/be9bd48e-4cff-4d64-9565-6a380efc1acf)
 
+![dashboard](https://github.com/KavinduLakmal2000/Android_LMS/assets/87576012/04da36b2-721a-4893-9230-b526ea101ae6)
+
