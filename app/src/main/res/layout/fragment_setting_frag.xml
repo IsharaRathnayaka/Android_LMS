@@ -13,11 +13,19 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
+
         android:gravity="center"
         android:text="SETTINGS"
         android:textColor="#575959"
         android:textSize="35dp" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/sett"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
 
 
 
@@ -26,7 +34,7 @@
         android:id="@+id/updateCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sett"
+        android:layout_below="@id/divider3"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:text="Auto Update"

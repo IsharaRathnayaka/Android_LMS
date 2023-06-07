@@ -15,11 +15,18 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="DASHBOARD"
         android:textColor="#575959"
         android:textSize="35dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_below="@id/dash"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
 
     <CalendarView
         android:id="@+id/calendarView"

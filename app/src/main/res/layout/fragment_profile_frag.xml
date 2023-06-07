@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,19 +14,117 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="MY PROFILE"
         android:textColor="#575959"
         android:textSize="35dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_below="@id/pro"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="180dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
 
-       android:layout_gravity="center"
+
         android:src="@drawable/profile_pic1" />
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/textView_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_fname"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_lname"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_age"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_batch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_dob"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_batch"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_phone"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_degree"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

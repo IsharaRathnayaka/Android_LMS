@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "550803061488",
+    "project_id": "android-lms-f55aa",
+    "storage_bucket": "android-lms-f55aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550803061488:android:36bdbcc5158eba0432a035",
+        "android_client_info": {
+          "package_name": "com.example.lms_log"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550803061488-oook98tgs2l4kl46hht6q9gmlck0jep9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAnxOpzZRT1YpYD4rrVNmzixaqBwNeVlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550803061488-oook98tgs2l4kl46hht6q9gmlck0jep9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
